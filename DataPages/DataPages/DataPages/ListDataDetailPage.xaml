@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:DataPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pages="clr-namespace:Xamarin.Forms.Pages;assembly=Xamarin.Forms.Pages"
+             x:Class="DataPages.ListDataDetailPage">
+  <StackLayout Spacing="12" Padding="12" VerticalOptions="Start">
+    <StackLayout Padding="6,0">
+      <Label Text="Title" FontAttributes="Bold"/>
+      <Label Text="{pages:DataSourceBinding title}"/>
+    </StackLayout>
+    <StackLayout Padding="6,0">
+      <Label Text="Biography" FontAttributes="Bold"/>
+      <Label Text="{pages:DataSourceBinding biography}"/>
+    </StackLayout>
+  </StackLayout>
+</pages:DataPage>

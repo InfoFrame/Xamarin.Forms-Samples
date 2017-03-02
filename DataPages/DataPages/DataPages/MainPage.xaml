@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DataPages"
+             x:Class="DataPages.MainPage"
+             Title="Xamarin.Forms DataPages Sample">
+  <StackLayout Spacing="12" Padding="0,12">
+    <Label Text="Xamarin.Forms DataPages Sample"
+           VerticalOptions="Center"
+           HorizontalOptions="Center">
+      <Label.IsVisible>
+        <OnPlatform x:TypeArguments="x:Boolean" Android="False" iOS="False" WinPhone="True"/>
+      </Label.IsVisible>
+    </Label>
+
+    <Button Text="DataPages Default" Clicked="DataPagesDefaultClicked"/>
+    <Button Text="DataPages Custom" Clicked="DataPagesCustomClicked"/>
+  </StackLayout>
+</ContentPage>

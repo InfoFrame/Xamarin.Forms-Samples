@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:theme="clr-namespace:Xamarin.Forms.Themes;assembly=Xamarin.Forms.Theme.Light"
+             xmlns:pages="clr-namespace:Xamarin.Forms.Pages;assembly=Xamarin.Forms.Pages"
+             x:Class="DataPages.App">
+  <Application.Resources>
+    <ResourceDictionary MergedWith="theme:LightThemeResources">
+      <Style x:Key="CardViewStyle" TargetType="pages:CardView">
+        <Setter Property="ControlTemplate">
+          <Setter.Value>
+            <ControlTemplate>
+              <StackLayout BackgroundColor="{TemplateBinding BackgroundColor}"
+                           Padding="6,12" Spacing="6">
+                <Image Source="{TemplateBinding ImageSource}"
+                       HeightRequest="200"
+                       Aspect="AspectFill"/>
+
+                <Label Text="{TemplateBinding Text}"
+                       FontSize="Large"
+                       FontAttributes="Bold"/>
+              </StackLayout>
+            </ControlTemplate>
+          </Setter.Value>
+        </Setter>
+      </Style>
+    </ResourceDictionary>
+  </Application.Resources>
+</Application>
